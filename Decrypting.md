@@ -16,6 +16,12 @@ The files here include:
 | *.gpg         | Each note individually encrypted in GPG/PGP format  |
 | Decrypting.md | This document!                                      |
 
+The notes are encrypted redundantly in different formats. If you can
+get the .7z file open, you have the full set of notes and you can
+forget about the .gpg files. If you can't get at these files using
+any of the methods written below, ask your closest computer geek friend
+to help you out.
+
 # Requirements
 
 The following software will be helpful to open these files.

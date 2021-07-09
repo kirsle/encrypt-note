@@ -1,11 +1,15 @@
 # encrypt-note
 
 A simple script to create encrypted notes using bog standard
-encryption tools, with instructions how to decrypt them.
+encryption tools, with instructions how to decrypt them. The idea
+is to create _relatively_ simple notes and write down the long
+passphrase for them and hide it in a safe place, along with directions
+where to find your encrypted files to open them.
 
-It takes your files from the `notes/` directory and encrypts
-them into password-protected containers using commonly
-available file formats.
+By encrypting your notes into several different formats using
+standard or free and open source protocols, you could set it and
+forget it and hopefully whoever needs to open your notes will find
+at least one method to get into them.
 
 ## Usage
 
@@ -28,11 +32,11 @@ The `out/` folder will contain:
 * `*.gpg` files: each of your notes individually encrypted using bog
   standard GPG/PGP symmetric keys, following the GNU Privacy Guard or
   Pretty Good Privacy standard.
-* `README.txt` containing instructions how to open these files.
+* `Decrypting.md` containing instructions how to open these files.
+
+Open for more ideas, send a pull request!
 
 ## Example
-
-
 
 ```bash
 % make
@@ -56,3 +60,13 @@ gpg: encrypted with 1 passphrase
 
 An example note to be encrypted.
 ```
+
+## Decrypting the Notes
+
+The `Decrypting.md` file is copied with the output notes to give
+instructions to the recipient on how to decode the files.
+
+## License
+
+Public domain, I don't care, the `encrypt-note.py` is just a trivial
+Python script to run 7z and gpg commands.
